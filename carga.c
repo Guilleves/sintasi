@@ -17,7 +17,7 @@ char* carga(int* n){
     static char texto[1000];
     int i = 0;
 
-    while ((texto[i] = getchar()) != EOF && i<999);
+    while ((texto[i] = getchar()) != EOF && i<999)
         i++;
         
     texto[i] = '\0';
