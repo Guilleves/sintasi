@@ -19,6 +19,7 @@ struct palcalif *cargaPalabras(int *n){
 	char rta;
 
 	while (rta != 'n' && i<999){
+		j = 0;
 		while ((conjuntoPalabras[i].pala[j] = getchar()) != EOF && j<20){
 			j++;
 		conjuntoPalabras[i].pala[j] = '\0';
