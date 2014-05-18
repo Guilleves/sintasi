@@ -18,7 +18,8 @@ int main(){
     printf("Ingrese el texto\n\n");
 
     texto = carga(&n);
-    printf("Texto ingresado: %s ", texto);
+    printf("Texto ingresado: %s \n", texto);
+    printf("long del texto: %i\n\n", n);
 
     strcpy(original->textOriginal, texto);
 
@@ -26,9 +27,9 @@ int main(){
     scanf("%c\n\n", &c);
     printf("ingrese el caracter de reemplazo\n");
     scanf("%c\n\n", &cr);
-
+    
     resultado = modifica(texto, n, c, cr);
-    printf("el texto era %s, se transformo en %s y se hicieron %d reemplazos", original->textOriginal, resultado->textNew, resultado->cantidad );
+    printf("el texto era %s, se transformo en %s y se hicieron %d reemplazos", resultado->textOriginal, resultado->textNew, resultado->cantidad );
 
     return 0;
     }
@@ -67,8 +68,7 @@ char *busca(char *t, int n){
 	static char *textoCortado;
 	printf("Ingrese un caracter a buscar");
 	scanf("%c", &c);
-	textoCortado = strchr(t; c);
+	textoCortado = strchr(t, c);
 	if (strchr(t, c) != NULL)
 		return(textoCortado);
 }
-
