@@ -6,12 +6,14 @@ struct modif { char textOriginal[1000]; char textNew[1000]; int cantidad; };
 
 char *carga(int *);
 struct modif *modifica(char *, int, char, char);
+char *busca(char *, int);
 
 
 
 int main(){
     int n;
     char *texto;
+    char *textoCortado;
     char c, cr;
     struct modif *original;
     struct modif *resultado;
@@ -23,14 +25,29 @@ int main(){
 
     strcpy(original->textOriginal, texto);
 
+    /*OPCION 1- MODIFICA*/
     printf("ingrese el caracter a reemplazar\n");
     scanf("%c\n\n", &c);
     printf("ingrese el caracter de reemplazo\n");
     scanf("%c\n\n", &cr);
 
     resultado = modifica(texto, n, c, cr);
-    printf("el texto era %s, se transformo en %s y se hicieron %d reemplazos", resultado->textOriginal, resultado->textNew, resultado->cantidad );
+    printf("el texto era %s, se transformo en %s y se hicieron %d reemplazos\n\n\n\n", resultado->textOriginal, resultado->textNew, resultado->cantidad );
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /*OPCION 2- CUENTA (NO SE PROGRAMA*/
+
+    /*OPCION 3- BUSCA*/
+    textoCortado = busca(texto, n);
+
+    if (textoCortado != NULL){
+        printf("Habiendo cortado el texto, quedo: %s\n", textoCortado);
+        printf("Y la direccion donde se encuentra la primer ocurrencia del caracer en el texto es: %i", &textoCortado);
+    }
+    else
+        printf("Ese caracter no estaba en el texto");
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
     return 0;
     }
 
@@ -66,9 +83,9 @@ struct modif *modifica(char *t, int n, char charAReemplazar, char cReemplazo){ /
 char *busca(char *t, int n){
 	char c;
 	static char *textoCortado;
-	printf("Ingrese un caracter a buscar");
+	printf("Ingrese un caracter a buscar\n");
 	scanf("%c", &c);
 	textoCortado = strchr(t, c);
-	if (strchr(t, c) != NULL)
-		return(textoCortado);
+
+	return(textoCortado);
 }
