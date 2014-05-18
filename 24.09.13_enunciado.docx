@@ -1,0 +1,34 @@
+SINTAXIS Y SEMANTICA DE LENGUAJES 
+EXAMEN  LENGUAJE C – 24/09/2013
+
+
+NOTA______________________
+                                                       
+Nombre y Apellido___________________________________________Com._____________
+
+Prof.Teoría__________________________Prof.Práctica______________________________
+
+
+ Con fines estadísticos se desea saber cuantas veces aparece dentro de un texto, cada una de las palabras que conforman un conjunto de palabras  calificadoras que se almacenaran en un arreglo de estructuras que tienen la siguiente forma:
+	struct palcalif { 
+	char pala[20];	/*palabra calificadora*/
+	int cantidad;	/*cantidad de veces que aparece en el texto*/
+                          }
+
+Escribir un programa en lenguaje C que ingrese el conjunto de palabras calificadoras, luego ingrese un texto, lo separe en palabras y luego realice un listado donde se muestren las palabras calificadoras con su correspondiente cantidad
+Para su resolución se deberán utilizar las siguientes funciones:
+
+	struct palcalif * carga_palabras(int*) Ingresa el conjunto de palabras calificadoras y deja disponible al main la cantidad de palabras que integran el conjunto.
+
+	void carga_texto (char * texto, int *)  Ingresa el texto determinando la cantidad de caracteres que lo componen y deja esta cantidad disponible para el main. Tener en cuenta que el texto a ingresar deberá poder contener cualquier carácter incluído el nueva línea.
+
+	char * separa (char *texto, int, int*)  Separa el texto en palabras, deja disponible para el main la cantidad de palabras que lo componen y retorna un puntero al arreglo que contiene todas las palabras del texto. NO PROGRAMAR
+
+	void cuenta (char  *palabras, struct palcalif [], int cantpal, int cantcalif) Recibe el conjunto de palabras que componen el texto, las palabras calificadoras y sus respectivas cantidades y a partir de esta información cuenta cuantas veces aparece en el texto cada palabra calificadora, guardando dicho valor en el campo cantidad de la estructura de tipo struct palcalif
+
+
+ESCRIBIR SOLO EN UNA CARA DE CADA HOJA
+
+
+
+
