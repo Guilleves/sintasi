@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-struct modif { char *textOriginal; char *textNew; int cantidad; };
+struct modif { char textOriginal[1000]; char textNew[1000]; int cantidad; };
 
 char *carga(int *);
 struct modif *modifica(char *, int, char, char);
@@ -27,7 +27,7 @@ int main(){
     scanf("%c\n\n", &c);
     printf("ingrese el caracter de reemplazo\n");
     scanf("%c\n\n", &cr);
-    
+
     resultado = modifica(texto, n, c, cr);
     printf("el texto era %s, se transformo en %s y se hicieron %d reemplazos", resultado->textOriginal, resultado->textNew, resultado->cantidad );
 
