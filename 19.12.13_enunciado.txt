@@ -1,0 +1,37 @@
+SINTAXIS Y SEMANTICA DE LENGUAJES 
+EXAMEN  LENGUAJE C – 19/12/2013
+NOTA FINAL____________
+
+APELLIDO Y NOMBRE: ___________________________________Nº LEGAJO: _________________
+    
+PROF. TEORIA: ____________________________PROF. PRACTICA: _________________________   
+
+Escribir un programa C que:
+Permita ingresar un texto, el cual podrá contener cualquier tipo de caracteres, incluido el enter (nueva línea o \n)  (máximo 1000 caracteres) utilizando la función carga, cuyo prototipo es:
+char * carga (int  *)      NO PROGRAMAR
+
+Luego muestra el siguiente menú:
+1-	Modifica
+2-	Cuenta
+3-	Busca 
+4-	Salir
+
+Opción 1: solicitar al usuario que ingrese dos caracteres,  un carácter a reemplazar y un carácter de reemplazo, a continuación llamar a la función modifica, la que deberá devolverle al main la dirección de una estructura que contenga: 
+•	El texto original
+•	El texto modificado
+•	La cantidad de reemplazos que se realizaron
+ para que la función main imprima dicha información.  El prototipo de modifica es:
+struct modif * modifica (char *, int, char, char);     PROGRAMAR
+
+Opción 2: solicitar al usuario que ingrese un caracter y llamar a la función cuenta, la que deberá contar y dejar disponible para el main la cantidad de veces que dicho caracter aparece en el texto. El prototipo de cuenta es:	void cuenta (char *, int, char, int *)  NO PROGRAMAR
+
+ Opción 3: llamar a la función busca, esta función solicita al usuario el ingreso de un caracter y retorna la dirección de memoria en la que se encuentra la primera ocurrencia dentro del texto del carácter ingresado o NULL si no lo encuentra, a continuación la función main imprimirá el texto a partir de la dirección retornada o “el carácter no existe en el texto” en caso de no encontrarlo.  El prototipo de busca es:
+char *  busca (char *, int)     PROGRAMAR
+
+Opción 4: finaliza el programa
+
+EL PROGRAMA DEBERA ITERARSE HASTA QUE EL USUARIO ELIJA LA OPCION 4
+
+ESCRIBIR DE UN SOLO LADO DE LA HOJA
+
+PROGRAMAR SOLAMENTE LAS FUNCIONES main, modifica Y busca  
