@@ -1,0 +1,35 @@
+SINTAXIS Y SEMANTICA DE LENGUAJES 
+EXAMEN  LENGUAJE C – 14/03/2013
+
+NOTA FINAL____________
+
+APELLIDO Y NOMBRE: ________________________________________ 
+
+Nº LEGAJO: ___________________
+    
+PROF. TEORIA: ______________________________  
+
+PROF. PRACTICA: ______________________________   
+
+
+
+
+Escribir un programa C que:
+Permita ingresar un texto (máximo 1000 caracteres) utilizando la función carga, cuyo prototipo es:
+char * carga (int  *);
+
+considerar que el texto podrá contener cualquier tipo de carácter, incluido el enter (nueva línea o \n)
+Luego ingresar un carácter a reemplazar y un carácter de reemplazo, a continuación llamar a la función reemplaza, la que deberá devolverle al main la dirección de una estructura que contenga: 
+•	El texto modificado
+•	La cantidad de reemplazos que se realizaron
+ para que la función main imprima dicha información.  El prototipo de reemplaza es:
+
+struct modif * reemplaza (char *, int, char, char);
+
+
+Ejemplo: si se ingresa el texto “esto es una prueba” y los caracteres ‘s’ y ‘$’ el programa mostrará:
+                
+En el texto e$to e$ una prueba se hicieron 2 reemplazos
+
+
+ESCRIBIR DE UN SOLO LADO DE LA HOJA 
