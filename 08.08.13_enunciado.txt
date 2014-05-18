@@ -1,0 +1,26 @@
+
+Desarrollar un programa en lenguaje C, que realice las siguientes acciones:
+a)	Cargue un texto.
+b)	Cambie los dígitos por * (asteriscos).
+c)	Muestre:
+El texto………………………….…………………………………. cambiado se lee: ……………………………………………………………………... 
+
+Para resolver esta problemática deberá utilizar las siguientes funciones: 
+-	Una función que cargue un texto(que incluya cualquier tipo de caracteres, incluso la nueva línea) cuyo prototipo será:
+char *  carga(int*)
+
+-	Una función que cambie el texto, su prototipo será:
+char*  cambia_texto(char *, int)
+
+
+
+IMPORTANTE: Respetar los prototipos dados.
+            Escribir solo en una carilla de la hoja.
+     Se evaluará:  
+•	la correcta utilización de punteros
+•	la correcta declaración de variables
+•	el correcto pasaje de parámetros
+•	la correcta llamada a las funciones
+
+				
+
