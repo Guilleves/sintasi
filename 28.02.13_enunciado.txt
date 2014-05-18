@@ -1,0 +1,42 @@
+SINTAXIS Y SEMANTICA DE LENGUAJES 
+EXAMEN  LENGUAJE C – 28/02/2013
+
+NOTA FINAL____________
+
+APELLIDO Y NOMBRE: ________________________________________ 
+
+Nº LEGAJO: ___________________
+    
+PROF. TEORIA: ______________________________  
+
+PROF. PRACTICA: ______________________________   
+
+
+
+
+Escribir un programa C que:
+Permita ingresar un texto (máximo 1000 caracteres) utilizando la función carga, cuyo prototipo es:
+char * carga (int  *)
+
+considerar que el texto podrá contener cualquier tipo de carácter, incluido el enter (nueva línea o \n)
+Luego ingresar un carácter y llamar a la función busca, la que deberá devolverle al main una estructura que contenga: 
+•	la dirección de memoria en la que se encuentra la primera ocurrencia dentro del texto del carácter ingresado o NULL si no lo encuentra.
+•	la longitud del texto consecutivo a dicho carácter.
+ para que la función main imprima dicha información o “el carácter no existe en el texto” en caso de no encontrarlo.  El prototipo de busca es:
+
+struct info busca (char *, int, char)
+
+
+Ejemplo: si se ingresó el texto:
+   “Examen de Sintaxis y Semantica de los Lenguajes
+     del dia 28 de febrero de 2013”
+y el carácter ‘i’
+el programa deberá mostrar:
+intaxis y Semantica de los Lenguajes
+del dia 28 de febrero de 2013
+longitud del texto mostrado 66 caracteres
+
+
+ESCRIBIR DE UN SOLO LADO DE LA HOJA
+
+UTILIZAR LAS FUNCIONES DE BIBLIOTECA <string.h> APROPIADAS PARA MANEJO DE CADENAS 
